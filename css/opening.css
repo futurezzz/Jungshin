@@ -51,6 +51,10 @@ body {
 }
 }
 
+.appear {
+  animation: 1.5s linear bgAppear;
+}
+
 .main--text {
   position: absolute;
   width: 93vw;
@@ -67,9 +71,9 @@ body {
   width: 260px;
   font-size: 1.2rem;
   font-weight: 500;
-  color: transparent;
+  display: none;
+  color: #345;
   user-select: none;
-  transition: 1.2s;
 }
 
 .left {
@@ -82,9 +86,8 @@ body {
 
 .logo {
   position: absolute;
+  display: none;
   top: calc(50vh - 150px);
-  transition: 2s;
-  opacity: 0;
 }
 
 .logo > img {
