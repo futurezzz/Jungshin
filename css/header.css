@@ -1,0 +1,39 @@
+:root {
+  --header-height: 60px;
+}
+
+html {
+  position: relative;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  min-width: 520px;
+  height: var(--header-height);
+  background-color: var(--header-color);
+  color: var(--white);
+}
+
+.header > i {
+  position: absolute;
+  top: 17px;
+  left: 25px;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.header--title {
+  position: absolute;
+  z-index: 100;
+  left: calc(50vw - 140px);
+  width: 300px;
+  height: var(--header-height);
+  padding: 0;
+  line-height: var(--header-height);
+  background-color: transparent;
+  top: 0;
+  color: var(--white);
+  font-size: var(--header-text-size);
+  text-align: center;
+}
