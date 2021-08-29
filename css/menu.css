@@ -11,7 +11,9 @@
   background-size: cover;
 }
 
-#check2, #check3 {
+#check1,
+#check2,
+#check3 {
   display: none;
 }
 
@@ -40,14 +42,9 @@
 .menu .menu3 {
   margin-bottom: 20px
 }
-#check2:checked ~ .menu > .menu2 > .menu-item {
-  height: var(--list-height);
-  padding: 10px 0;
-  margin-bottom: 2px;
-  color: var(--main-color);
-  transition: .3s;
-}
 
+#check1:checked ~ .menu > .menu1 > .menu-item,
+#check2:checked ~ .menu > .menu2 > .menu-item,
 #check3:checked ~ .menu > .menu3 > .menu-item {
   height: var(--list-height);
   padding: 10px 0;
@@ -63,8 +60,9 @@
   background-color: var(--sub-color);
   text-decoration: none;
   text-align: center;
-  font-size: .8rem;
+  font-size: .9rem;
   color: transparent;
+  user-select: none;
   box-shadow: 1px 1px 2px rgba(144, 97, 195, 0.8);
   transition: .3s;
 }

@@ -1,7 +1,11 @@
 
+body {
+  overflow: hidden;
+}
+
 .wrapper {
   margin-top: 80px;
-  width: 95vw;
+  width: 98vw;
   max-width: 600px;
   height: 95vh;
   background-color: var(--white);

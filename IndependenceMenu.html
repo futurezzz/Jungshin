@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>정신여고 독립운동가</title>
+  <title>정신의 독립운동가</title>
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -27,48 +27,60 @@
   
   <!-- stylesheet -->
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/IndependenceMenu.css">
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&family=Nanum+Gothic&family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
   <div data-include-path="common/header.html"></div>
-  <header class="header--title">MENU</header>
+  <header class="header--title">정신(貞信) 독립운동가</header>
   <main>
-    <div class="container">
-      <input type="checkbox" id="check1">
-      <input type="checkbox" id="check2">
-      <input type="checkbox" id="check3">
-      <div class="menu">
-        <label for="check1" class="menu1--btn">정신(貞信) 독립운동가</label>
-        <div class="menu1">
-          <a href="IndependenceMenu.html" target="_blank" class="menu-item">정신(貞信) 독립운동가</a>
-          <a href="IndependenceMariaMovie.html" target="_blank" class="menu-item">김마리아 기념 영상</a>
-        </div>
+    <div class="container"> 
+      <input type="radio" id="tab1" name="tab_item" checked="checked">
+      <input type="radio" id="tab2" name="tab_item">
+      <input type="radio" id="tab3" name="tab_item">
+
+      <div class="navbar__menu">
+        <label for="tab1" class="tab1 menu__item" data-tab="tab-1">독립운동가</label>
+        <label for="tab2" class="tab2 menu__item" data-tab="tab-2">졸업기수별</label>
+        <label for="tab3" class="tab3 menu__item" data-tab="tab-3">졸업기수미상</label>
       </div>
-      <div class="menu">
-        <label for="check2" class="menu2--btn">기념공모작</label>
-        <div class="menu2">
-          <a href="contest2015Writing.html" target="_blank" class="menu-item">2015 김마리아 기념 백일장</a>
-          <a href="contest2019Maira.html" target="_blank" class="menu-item">2019 김마리아 선생의 일대기</a>
-          <a href="contest2020History.html" target="_blank" class="menu-item">2020 정신(貞信) 독립운동가</a>
-          <a href="contest2020People.html" target="_blank" class="menu-item">2020 정신(貞信) 독립운동가 일대기</a>
-        </div>
-      </div>
-      
-      <div class="menu">
-        <label for="check3" class="menu3--btn">학교소개</label>
-        <div class="menu3">
-          <a href="PrincipalSpeech.html" target="_blank" class="menu-item">교장선생님 말씀</a>
-          <a href="symbols.html" target="_blank" class="menu-item">학교상징</a>
-          <a href="history.html" target="_blank" class="menu-item">학교연혁</a>
-          <a href="http://chungshin.sen.hs.kr/index.do" target="_blank" class="menu-item">학교 홈페이지</a>
-          <a href="staff.html" target="_blank" class="menu-item">STAFF</a>
-        </div>
-      </div>
+
+<!-- 메뉴 -->
+    <!-- <section id="navbar">
+      <ul class="navbar__menu">
+          <li class="menu__item active" data-link="#thumbnails">독립운동가</li>
+          <li class="menu__item" data-link="#by-graduate">졸업기수별</li>
+          <li class="menu__item" data-link="#unknown-graduate">졸업기수별</li>
+      </ul>
+    </section> -->
+
+<div class="wrapper">
+
+  <!-- 독립운동가 -->
+      <section id="thumbnails">
+        <ul class="thumbnails tab__content">
+        </ul>
+      </section>
+  
+  <!-- 졸업기수별 독립운동가 -->
+        <section id="by-graduate">
+          <div class="graduate__list">
+            <img src="images/독립운동가/menu/IndependenceGraduate1.png" width="350px"> 
+          </div>
+        </section>
+  
+  <!-- 졸업기수 미상 독립운동가 -->
+        <section id="unknown-graduate">
+          <div class="graduate__list">
+            <img src="images/독립운동가/menu/IndependenceGraduate2.png" width="350px"> 
+            <p></p>
+          </div>
+        </section>
+</div>
     </div>
   </main>
   <script src="js/includeHTML.js"></script>
+  <script src="js/IndependenceMenu.js"></script>
 </body>
 </html>

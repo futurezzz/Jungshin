@@ -36,14 +36,17 @@
   <header class="header--title">STAFF</header>
   <main>
     <div class="container"> 
+      <input type="radio" id="tab1" name="tab_item" checked="checked">
+      <input type="radio" id="tab2" name="tab_item">
+      <input type="radio" id="tab3" name="tab_item">
 
       <div class="tabs">
-        <div class="tab-link current" data-tab="tab-1">정신독립운동사<br>연구반</div>
-        <div class="tab-link" data-tab="tab-2">미술반</div>
-        <div class="tab-link" data-tab="tab-3">앱 개발반<br>(Maker's Lab)</div>
+        <label for="tab1" class="tab-link1 tab" data-tab="tab-1">정신독립운동사<br>연구반</label>
+        <label for="tab2" class="tab-link2 tab" data-tab="tab-2">미술반</label>
+        <label for="tab3" class="tab-link3 tab" data-tab="tab-3">앱 개발반<br>(Maker's Lab)</label>
       </div>
     
-      <div id="tab-1" class="tab-content current">
+      <div class="tab-content1">
         <h2>2020년 지도교사 : 조흥근</h2>
         <ul class="list1">
           <li class="list-item">김민소</li>
@@ -57,7 +60,7 @@
           <li class="list-item">하정주</li>
         </ul>
       </div>
-      <div id="tab-2" class="tab-content">
+      <div class="tab-content2">
         <h2>2020년 지도교사 : 신현영, 유예지</h2>
         <ul class="list2">
           <li class="list-item">경희상</li>
@@ -88,7 +91,7 @@
           <li class="list-item">이승연</li>
         </ul>
       </div>
-      <div id="tab-3" class="tab-content">
+      <div class="tab-content3">
         <h2>2020년 지도교사 : 이은파, 김동현</h2>
         <ul class="list3">
           <li class="list-item">김민주</li>
@@ -103,7 +106,7 @@
   </main>
   <!-- <div data-include-path="footer.html"></div> -->
   <script src="js/includeHTML.js"></script>
-  <script src="js/staff.js"></script>
+  <!-- <script src="js/staff.js"></script> -->
 
 
 </body>

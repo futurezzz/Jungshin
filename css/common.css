@@ -3,15 +3,16 @@
   --header-color: #38244d;
   --main-color: hsl(269, 30%, 40%);
   --sub-color: rgba(195, 176, 216, 0.9);
-  --anchor-color: rgba(238, 223, 255, 0.686);
+  --anchor-color: rgba(240, 223, 255, 0.686);
   --hover-color: hsl(269, 31%, 55%);
   --black-color:#1f1f1f;
   --boder-color: hsl(269, 22%, 72%);
+  --black2-color: rgba(0,0,0,.2);
   --white: #fefefe;
 
   /* size */
   --btn-height: 45px;
-  --list-height: 35px;
+  --list-height: 40px;
   --text-size: 14px;
   --phone-text-size: 12px;
   --header-text-size: 17px;
