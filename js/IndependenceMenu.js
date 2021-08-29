@@ -11,7 +11,13 @@ button.addEventListener('click', (e)=>{
   console.log("id",key,IndeName);
   localStorage.setItem("id",key);
   localStorage.setItem("IndeName",IndeName);
-  window.open("IndependenceContent.html","독립운동가들")
+  // window.open("IndependenceContent.html","_blank")
+
+  if (typeof (window.open) == "function")
+  { window.open("IndependenceContent.html"); 
+  } else { window.location.href = "IndependenceContent.html";
+  }
+
 });
 
 //functions
