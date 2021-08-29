@@ -63,6 +63,16 @@ input {
   font-size: 18px;
 }
 
+.menu__title > a{
+  text-decoration: none;
+  color: var(--sub-color);
+}
+
+.menu__title > a:hover{
+  text-decoration: none;
+  color: rgb(253, 255, 194);
+}
+
 i {
   width: 30px;
 }
@@ -76,7 +86,7 @@ i {
 }
 
 .menu__list:hover {
-  color: rgb(254, 255, 216);
+  color: rgb(253, 255, 194);
 }
 .hamberger1 {
   position: fixed;
