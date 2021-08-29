@@ -37,7 +37,7 @@ body {
   position: fixed;
   z-index: -1;
   width: 90%;
-  height: 60%;
+  height: 50%;
   max-width: 550px;
   background: no-repeat center url('../images/시작문구배경.png');
   background-size: cover;
