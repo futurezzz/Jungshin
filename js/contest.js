@@ -71,7 +71,7 @@ function loadItems(){
 
 function displayItems(items){
   
-  item = items.map(item=>item);
+  item = items.map(item => item);
   // console.log(item[1].Nave);
 }
 

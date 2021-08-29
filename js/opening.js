@@ -7,7 +7,7 @@ let clickCount = 0;
 
 mainBtn.addEventListener('click',() => {
   clickCount++;
-  console.log(clickCount)
+  // console.log(clickCount)
   if (clickCount === 1 ){
     mainText.style.color = 'transparent';
     setTimeout(() => {
